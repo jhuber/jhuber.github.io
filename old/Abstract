@@ -1,7 +1,0 @@
-Abstract
-
-The sense of sight is a dominant channel of how we understand the world and receive information around us. Despite efforts and great variety, mobile assistive technology for the blind suffers from low user acceptance. This is mainly due to interfaces that focus on simply exchanging interaction modes: reading back text to a blind user, instead of displaying it. This limits efficiency, effectiveness and foremost it does not reflect that blind users typically rely on a combination of senses to accomplish everyday tasks. 
-
-The overarching goal of the collaborative project proposed here is to design and develop mobile assistive technology, user interfaces and interactions for blind users that seamlessly integrate with their mind, bodies and behavior providing them an enhanced perception. We call this "Assistive Augmentation". 
-
-Informed by a case study conducted in support of this proposal, we found that creating such assistive augmentations poses a two-fold challenge: for one, it requires novel hardware technologies that capture relevant sensory information, reason about the physical environment they are used in and yet are small-scale and unobtrusive. Also, assistive augmentations require a holistic design perspective to ease social integration, support independence, increase efficiency–to account for real-world applicability. We will explore these challenges along the lines of two pertinent application scenarios, mobile text reading and interactive learning for children.
