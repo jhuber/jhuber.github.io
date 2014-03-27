@@ -914,7 +914,6 @@ header {
 
 #logo, #logoDetailView {
 	float: left;
-	cursor: pointer;
 }
 
 #logo img, #logoDetailView img {
