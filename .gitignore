@@ -51,6 +51,9 @@ images/projects/project_05_f.jpg
 
 images/projects/project_05_g.jpg
 
+# Analysis and documentation files
+CODEBASE_ANALYSIS.md
+
 images/projects/project_06_a.jpg
 
 images/projects/project_06_b.jpg
@@ -70,3 +73,6 @@ old/projects-old.html
 old/resume.pdf
 papers/.DS_Store
 .DS_Store
+ANALYSIS_SUMMARY.md
+.gitignore
+.gitignore
