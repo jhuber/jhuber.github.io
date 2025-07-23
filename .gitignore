@@ -1,4 +1,11 @@
 
+# Analysis and implementation documents (keep local only)
+ENHANCED_CODEBASE_ANALYSIS.md
+LLM_IMPLEMENTATION_PLAN.md
+ANALYSIS_SUMMARY.md
+*_ANALYSIS.md
+*_PLAN.md
+
 images/backgrounds/crossword.png
 
 images/backgrounds/square_bg.png
