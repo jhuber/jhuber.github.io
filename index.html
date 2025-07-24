@@ -65,48 +65,33 @@ www.typeandgrids.com
     <script src="js/libs/jquery.fitvids.js"></script>
     <script src="js/script.js"></script>
 
-    <link
-      rel="stylesheet"
-      href="nivo-themes/default/default.css"
-      type="text/css"
-      media="screen"
-    />
-    <link
-      rel="stylesheet"
-      href="css/nivo-slider.css"
-      type="text/css"
-      media="screen"
-    />
-    <script
-      type="text/javascript"
-      src="js/libs/jquery.nivo.slider.pack.js"
-    ></script>
-    <script type="text/javascript">
-      $(window).load(function () {
-        $("#slider").nivoSlider({
-          effect: "fade", // Specify sets like: 'fold,fade,sliceDown'
-          slices: 15, // For slice animations
-          boxCols: 16, // For box animations
-          boxRows: 8, // For box animations
-          animSpeed: 1500, // Slide transition speed
-          pauseTime: 7500, // How long each slide will show
-          //startSlide: 0,                  // Set starting Slide (0 index)
-          directionNav: false, // Next & Prev navigation
-          controlNav: false, // 1,2,3... navigation
-          controlNavThumbs: false, // Use thumbnails for Control Nav
-          pauseOnHover: false, // Stop animation while hovering
-          manualAdvance: false, // Force manual transitions
-          prevText: "Prev", // Prev directionNav text
-          nextText: "Next", // Next directionNav text
-          randomStart: true, // Start on a random slide
-          beforeChange: function () {}, // Triggers before a slide transition
-          afterChange: function () {}, // Triggers after a slide transition
-          slideshowEnd: function () {}, // Triggers after all slides have been shown
-          lastSlide: function () {}, // Triggers when last slide is shown
-          afterLoad: function () {}, // Triggers when slider has loaded
-        });
-      });
-    </script>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Custom Swiper Styles -->
+    <style>
+      /* Ensure Swiper matches existing layout */
+      .swiper {
+        width: 100%;
+        height: auto;
+        border-radius: 4px; /* matches existing styling */
+      }
+      
+      .swiper-slide img {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover;
+      }
+      
+      /* Maintain sixteen columns grid behavior */
+      .slider-wrapper.sixteen.columns .swiper {
+        max-width: 100%;
+      }
+    </style>
     <script type="text/javascript">
       var gaJsHost =
         "https:" == document.location.protocol ? "https://ssl." : "http://www.";
@@ -154,44 +139,66 @@ www.typeandgrids.com
       <!-- Home page begins ====================================================================== -->
       <div id="home">
         <div class="slider-wrapper sixteen columns" style="margin-bottom: 30px">
-          <div id="slider" class="nivoSlider">
-            <img
-              src="./images/titles/header-multiforce.jpg"
-              title="Multi-Level Force Touch Input for Automotive (AutoUI 2017)"
-            />
-            <img
-              src="./images/titles/header-stimmmaler.jpg"
-              title="Paint with your voice (TEI 2014)"
-            />
-            <img
-              src="./images/titles/header-permulin.jpg"
-              title="Permulin (CHI 2014)"
-            />
-            <img
-              src="./images/titles/header-flexibles.jpg"
-              title="Flexbiles (CHI 2017)"
-            />
-            <img
-              src="./images/titles/header-fingerreader.jpg"
-              title="FingerReader (CHI 2015)"
-            />
-            <!--<img src="./images/titles/header-spidervision.jpg" title="SpiderVision (Augmented Human 2014)" />-->
-            <img
-              src="./images/titles/header-costream.jpg"
-              title="CoStream (BCS HCI 2013)"
-            />
-            <img
-              src="./images/titles/header-capmat.jpg"
-              title="CapMat (Augmented Human 2019)"
-            />
-            <img
-              src="./images/titles/header-lightbeam.jpg"
-              title="LightBeam (MUM 2012)"
-            />
-            <img
-              src="./images/titles/header-palmrc.jpg"
-              title="PalmRC (EuroITV 2012)"
-            />
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="./images/titles/header-multiforce.jpg"
+                  alt="Multi-Level Force Touch Input for Automotive (AutoUI 2017)"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/titles/header-stimmmaler.jpg"
+                  alt="Paint with your voice (TEI 2014)"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/titles/header-permulin.jpg"
+                  alt="Permulin (CHI 2014)"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/titles/header-flexibles.jpg"
+                  alt="Flexbiles (CHI 2017)"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/titles/header-fingerreader.jpg"
+                  alt="FingerReader (CHI 2015)"
+                />
+              </div>
+              <!--<div class="swiper-slide">
+                <img src="./images/titles/header-spidervision.jpg" alt="SpiderVision (Augmented Human 2014)" />
+              </div>-->
+              <div class="swiper-slide">
+                <img
+                  src="./images/titles/header-costream.jpg"
+                  alt="CoStream (BCS HCI 2013)"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/titles/header-capmat.jpg"
+                  alt="CapMat (Augmented Human 2019)"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/titles/header-lightbeam.jpg"
+                  alt="LightBeam (MUM 2012)"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/titles/header-palmrc.jpg"
+                  alt="PalmRC (EuroITV 2012)"
+                />
+              </div>
+            </div>
           </div>
         </div>
 
@@ -377,5 +384,45 @@ www.typeandgrids.com
       <!-- Footer ends ============================================================================ -->
     </div>
     <!-- container -->
+
+    <!-- Swiper Initialization -->
+    <script>
+      // Initialize Swiper
+      const swiper = new Swiper('.swiper', {
+        // Fade effect to match current Nivo behavior
+        effect: 'fade',
+        fadeEffect: {
+          crossFade: true
+        },
+        
+        // Timing to match current settings
+        speed: 1500,
+        autoplay: {
+          delay: 7500,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: false
+        },
+        
+        // Loop and random start
+        loop: true,
+        
+        // No navigation controls (matches current setup)
+        navigation: false,
+        pagination: false,
+        
+        // Accessibility improvements
+        a11y: {
+          enabled: true,
+          prevSlideMessage: 'Previous slide',
+          nextSlideMessage: 'Next slide',
+        },
+        
+        // Responsive behavior
+        autoHeight: false,
+        
+        // Start on random slide (matches randomStart: true)
+        initialSlide: Math.floor(Math.random() * 9), // 9 slides total
+      });
+    </script>
   </body>
 </html>
