@@ -1,12 +1,18 @@
-<!doctype html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
-<head>
-<meta charset="utf-8">
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; img-src 'self' data: https:; frame-src https://www.google.com; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com; connect-src https://fonts.googleapis.com https://fonts.gstatic.com;"
+    />
 
-<!--
+    <!--
 ••••••••••••••••••••••••
 
 Powered by Type & Grids™
@@ -15,294 +21,726 @@ www.typeandgrids.com
 ••••••••••••••••••••••••
 -->
 
-<title>Prof. Dr. Jochen Huber </title>
-<meta name="description" content="Homepage of Prof. Dr. Jochen Huber">
-<meta name="author" content="Jochen Huber">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+    <title>Prof. Dr. Jochen Huber</title>
+    <meta name="description" content="Homepage of Prof. Dr. Jochen Huber" />
+    <meta name="author" content="Jochen Huber" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=5"
+    />
 
-<!-- CSS
+    <!-- CSS
 ================================================================================================= -->
-<link rel="stylesheet" href="css/base.css">
-<link rel="stylesheet" href="css/themes/type_04.css"> <!-- was 4 -->
-<link rel="stylesheet" href="css/themes/color_09.css">
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/themes/type_04.css" />
+    <!-- was 4 -->
+    <link rel="stylesheet" href="css/themes/color_09.css" />
 
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
 
-<!--[if lt IE 9]>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-<![endif]-->
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
 
-<!-- Favicons
+    <!-- Favicons
 ================================================================================================= -->
-<link rel="shortcut icon" href="images/favicons/favicon.ico">
-<link rel="apple-touch-icon" href="images/favicons/apple-touch-icon.png">
-<link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-touch-icon-114x114.png">
+    <link rel="shortcut icon" href="images/favicons/favicon.ico" />
+    <link rel="apple-touch-icon" href="images/favicons/apple-touch-icon.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="images/favicons/apple-touch-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="images/favicons/apple-touch-icon-114x114.png"
+    />
 
-<!-- JS
+    <!-- JS
 ================================================================================================= -->
-<script src="js/libs/modernizr.min.js"></script>
-<script src="js/libs/jquery-1.8.3.min.js"></script>
-<script src="js/libs/jquery.easing.1.3.min.js"></script>
-<script src="js/libs/jquery.fitvids.js"></script>
-<script src="js/script.js"></script>
+    <script src="js/libs/modernizr.min.js"></script>
+    <!-- jQuery removed for security and performance -->
+    <script src="js/script.js"></script>
 
-<link rel="stylesheet" href="nivo-themes/default/default.css" type="text/css" media="screen" />
-<link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
-<script type="text/javascript" src="js/libs/jquery.nivo.slider.pack.js"></script>
-<script type="text/javascript">
-$(window).load(function() {
-    $('#slider').nivoSlider({
-	    effect: 'fade',               // Specify sets like: 'fold,fade,sliceDown'
-	    slices: 15,                     // For slice animations
-	    boxCols: 16,                     // For box animations
-	    boxRows: 8,                     // For box animations
-	    animSpeed: 1500,                 // Slide transition speed
-	    pauseTime: 10000,                // How long each slide will show
-	    //startSlide: 0,                  // Set starting Slide (0 index)
-	    directionNav: false,             // Next & Prev navigation
-	    controlNav: false,               // 1,2,3... navigation
-	    controlNavThumbs: false,        // Use thumbnails for Control Nav
-	    pauseOnHover: false,             // Stop animation while hovering
-	    manualAdvance: false,           // Force manual transitions
-	    prevText: 'Prev',               // Prev directionNav text
-	    nextText: 'Next',               // Next directionNav text
-	    randomStart: true,             // Start on a random slide
-	    beforeChange: function(){},     // Triggers before a slide transition
-	    afterChange: function(){},      // Triggers after a slide transition
-	    slideshowEnd: function(){},     // Triggers after all slides have been shown
-	    lastSlide: function(){},        // Triggers when last slide is shown
-	    afterLoad: function(){}         // Triggers when slider has loaded
-	});
-});
-
-</script>
-<script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-try {
-var pageTracker = _gat._getTracker("UA-49443613-1");
-pageTracker._trackPageview();
-} catch(err) {}</script>
-</head>
-<body>
-
-<!-- Write preloader to page - this allows the site to load for users with JS disabled -->
-<!--<script type="text/javascript">
+    <!-- Nivo Slider removed - no slider elements found in HTML -->
+    <!-- Google Analytics removed for security and privacy -->
+  </head>
+  <body>
+    <!-- Write preloader to page - this allows the site to load for users with JS disabled -->
+    <!--<script type="text/javascript">
 	document.write("<div id='sitePreloader'><div id='preloaderImage'><img src='images/site_preloader.gif' alt='Preloader' /></div></div>");
 </script>
 //-->
-<div class="container">
-	
-	<!-- Header begins ========================================================================== -->
-	<header class="sixteen columns">
-		<div id="logo">
-			<h1>Jochen Huber</h1>
-			<h2></h2>
-			<!--
+    <div class="container">
+      <!-- Header begins ========================================================================== -->
+      <header class="sixteen columns">
+        <div id="logo">
+          <h1>Jochen Huber</h1>
+          <h2></h2>
+          <!--
 			<img src="images/logo.png" width="275" height="35" alt="Logo" />
 			-->
-		</div>
-		<nav>
-			<ul>
-				<li><a href="./">Home</a></li>
-				<li><a href="./projects.html">Projects</a></li>
-				<!--<li><a href="http://www.mendeley.com/profiles/jochen-huber/" target="_blank">Publications</a>-->
-				<li><a href="./publications.html">Publications</a></li>
-				<li><a href="./about.html">About</a></li>
-			</ul>
-		</nav>
-		<hr />
-	</header>
-	<!-- Header ends ============================================================================ -->
-	
-	<!-- About page begins ====================================================================== -->
-	<div id="home">
+        </div>
+        <nav>
+          <ul>
+            <li><a href="./">Home</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <!--<li><a href="http://www.mendeley.com/profiles/jochen-huber/" target="_blank">Publications</a>-->
+            <li><a href="./publications.html">Publications</a></li>
+            <li><a href="./about.html">About</a></li>
+          </ul>
+        </nav>
+        <hr />
+      </header>
+      <!-- Header ends ============================================================================ -->
 
-		<!-- Column 1 begins ==================================================================== -->
-		<div class="twelve columns" id="aboutdiv">
-			
-			<h4>Brief Bio</h4>
-			<p style="width:96%; text-align: justify;">
-			Dr. Jochen Huber is Professor of Computer Science at Furtwangen University. Previously, he was a Senior User Experience Researcher at <a href="http://www.synaptics.com" target="_blank">Synaptics</a> and an SUTD-MIT postdoctoral fellow in the <a href="http://fluid.media.mit.edu">Fluid Interfaces Group</a> at MIT Media Lab and the <a href="http://asg.sutd.edu.sg">Augmented Human Lab</a> at Singapore University of Technology and Design. He holds a Ph.D. in Computer Science and degrees in both Mathematics (<em>Dipl.-Math.</em>) and Computer Science (<em>Dipl.-Inform.</em>), all from <a href="http://www.tu-darmstadt.de">Technische Universit&auml;t Darmstadt</a>, Germany. 
-			</p>
-			
-			<p style="width:96%; text-align: justify;">
-			Before joining MIT and SUTD, Jochen was head of the <a href="http://tk.informatik.tu-darmstadt.de">Tangible Interaction group</a> at the Telecooperation Lab at Technische Universit&auml;t Darmstadt, Germany (2012-2013). At the same time, he held regular positions as an adjunct lecturer in Interaction Design at the <a href="http://img.fh-mainz.de">Institute for Media Design</a>, University of Applied Sciences Mainz, Germany, since 2009. He was a visiting scholar at <a href="http://www.fxpal.com">FXPAL</a> (2011) and a research assisitant at the <a href="http://www.eml-d.de">European Media Lab</a> (2006-2008).
-			</p>
+      <!-- About page begins ====================================================================== -->
+      <div id="home">
+        <!-- Column 1 begins ==================================================================== -->
+        <div class="twelve columns" id="aboutdiv">
+          <h4>Brief Bio</h4>
+          <p style="width: 96%; text-align: justify">
+            Dr. Jochen Huber is Professor of Computer Science at Furtwangen
+            University. Previously, he was a Senior User Experience Researcher
+            at
+            <a href="http://www.synaptics.com" target="_blank">Synaptics</a> and
+            an SUTD-MIT postdoctoral fellow in the
+            <a href="http://fluid.media.mit.edu">Fluid Interfaces Group</a> at
+            MIT Media Lab and the
+            <a href="http://asg.sutd.edu.sg">Augmented Human Lab</a> at
+            Singapore University of Technology and Design. He holds a Ph.D. in
+            Computer Science and degrees in both Mathematics
+            (<em>Dipl.-Math.</em>) and Computer Science
+            (<em>Dipl.-Inform.</em>), all from
+            <a href="http://www.tu-darmstadt.de"
+              >Technische Universit&auml;t Darmstadt</a
+            >, Germany.
+          </p>
 
-			<h4>Research Interests</h4>
-			<p style="width:96%; text-align: justify;">
-			My research investigates technology that empowers people who find themselves at the edge of sensorial capability. I design, implement and study novel human-machine-interfaces that provide enhanced interactive and perceptive capabilities. Such augmenting technology can for instance assist a worker in a smart factory to perceive and understand its “invisible” AI processes. Yet, my approach goes beyond developing custom solutions that live in silos&mdash;the novelty lies in putting sensorial ability and disability on a continuum of usability for certain technology, rather than treat one or the other extreme as the focus. To give an example from a different application domain: a reading aid for the visually impaired can also double as a literacy development tool in early childhood education. 
-			</p>
-			<p style="width:96%; text-align: justify;">I call this research thrust “Assistive Augmentation”, an emerging subfield of applied computer science at the intersection of human-computer interaction and assistive technology. My work caters to the needs of our ongoing digital transformation with applications in mobile, healthcare, automotive and Industry 4.0 in general. It addresses high-impact societal problems like accessibility, sustainability and interoperability of human-machine interfaces. </p>
-			
-			<h4>Awards and Recognitions</h4>
-		
-			<ul class="disc narrow" style="width:75%">
-				<li><strong>SUTD-MIT Postdoctoral Fellowship (2013-2015)</strong>
-				<br />In June '13, I was awarded a two-year fellowship to conduct research on alternative feedback modalities for mobile interfaces within the SUTD-MIT Postdoctoral Program.</li>
-				<li><strong>Finalist, Singapore Challenge, Global Young Scientist Summit (2014)</strong>
-				<br />A proposal on "Smart Adaptive Interfaces for Ageing Gracefully" I co-authored with fellows of the Augmented Senses Group at SUTD was selected for the final round of <a href="http://www.gyss-one-north.sg/">GYSS 2014</a>.
-				<li><strong>Best Paper Award EuroiTV (2012)</strong>
-				<br />A paper I co-authored on <a href="http://doi.acm.org/10.1145/2325616.2325623">PalmRC: Imaginary Palm-based Remote Control for Eyes-free Television Interaction</a> was recognized with the EuroiTV best paper award 2012.</li>
-				<li><strong>Full Ph.D. Scholarship, German Research Foundation (2008-2012)</strong>
-				<br />I was awarded a full Ph.D. scholarship funded by the German Research Foundation to pursue a doctoral dissertation within the graduate school on &quot;Technology-enhanced Learning&quot; at Technische Universit&auml;t  Darmstadt (DFG Graduiertenkolleg &mdash; GRK 1223). </li>
-			</ul>
+          <p style="width: 96%; text-align: justify">
+            Before joining MIT and SUTD, Jochen was head of the
+            <a href="http://tk.informatik.tu-darmstadt.de"
+              >Tangible Interaction group</a
+            >
+            at the Telecooperation Lab at Technische Universit&auml;t Darmstadt,
+            Germany (2012-2013). At the same time, he held regular positions as
+            an adjunct lecturer in Interaction Design at the
+            <a href="http://img.fh-mainz.de">Institute for Media Design</a>,
+            University of Applied Sciences Mainz, Germany, since 2009. He was a
+            visiting scholar at <a href="http://www.fxpal.com">FXPAL</a> (2011)
+            and a research assisitant at the
+            <a href="http://www.eml-d.de">European Media Lab</a> (2006-2008).
+          </p>
 
-				
-		</div>
-		
-		<div class="four columns" id="sidebar" style="margin-top:20px">
-			
-			<img src="images/profile.jpg" alt="About" width="100%" align="center" style=" margin-bottom: 5px;"/>
-			<iframe width="100%" height="490" id="gmap_canvas" src="https://maps.google.com/maps?q=Hochschulcampus%20Tuttlingen&t=k&z=8&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-		</div>
+          <h4>Research Interests</h4>
+          <p style="width: 96%; text-align: justify">
+            My research investigates technology that empowers people who find
+            themselves at the edge of sensorial capability. I design, implement
+            and study novel human-machine-interfaces that provide enhanced
+            interactive and perceptive capabilities. Such augmenting technology
+            can for instance assist a worker in a smart factory to perceive and
+            understand its “invisible” AI processes. Yet, my approach goes
+            beyond developing custom solutions that live in silos&mdash;the
+            novelty lies in putting sensorial ability and disability on a
+            continuum of usability for certain technology, rather than treat one
+            or the other extreme as the focus. To give an example from a
+            different application domain: a reading aid for the visually
+            impaired can also double as a literacy development tool in early
+            childhood education.
+          </p>
+          <p style="width: 96%; text-align: justify">
+            I call this research thrust “Assistive Augmentation”, an emerging
+            subfield of applied computer science at the intersection of
+            human-computer interaction and assistive technology. My work caters
+            to the needs of our ongoing digital transformation with applications
+            in mobile, healthcare, automotive and Industry 4.0 in general. It
+            addresses high-impact societal problems like accessibility,
+            sustainability and interoperability of human-machine interfaces.
+          </p>
 
-		<div class="sixteen columns">
-			<h4>Editorials, Chairing and Organization</h4>
+          <h4>Awards and Recognitions</h4>
 
+          <ul class="disc narrow" style="width: 75%">
+            <li>
+              <strong>SUTD-MIT Postdoctoral Fellowship (2013-2015)</strong>
+              <br />In June '13, I was awarded a two-year fellowship to conduct
+              research on alternative feedback modalities for mobile interfaces
+              within the SUTD-MIT Postdoctoral Program.
+            </li>
+            <li>
+              <strong
+                >Finalist, Singapore Challenge, Global Young Scientist Summit
+                (2014)</strong
+              >
+              <br />A proposal on "Smart Adaptive Interfaces for Ageing
+              Gracefully" I co-authored with fellows of the Augmented Senses
+              Group at SUTD was selected for the final round of
+              <a href="http://www.gyss-one-north.sg/">GYSS 2014</a>.
+            </li>
 
-			<ul class="disc narrow">
-				<li><a href="http://records.mlab.no">ACM SIGMM Records</a> -- co-editor of column on multidisciplinary research in multimedia -- since June 2017<em><br />&mdash; with Cynthia C. S. Liem.</em></li>
-				<li>ACM Creativity &amp; Cognition 2017 Demonstrations Chair</li>
-				<li>ACM International Conference on Interactive Surfaces and Spaces (ISS) 2017 Sponsorship Co-Chair<em><br />&mdash; with Stacey Scott.</em></li>
-				<li>ACM TVX 2016 Technical Program Co-chair <em><br />&mdash; with Noor Ali-Hasan.</em></li>
-				<li>ACM Multimedia 2016 Track Co-chair &quot;Mobile Multimedia&quot;</li>
-				<li>Augmented Human 2015 Technical Program Co-Chair <em><br />&mdash; with Jun Rekimoto and Bing-Yu Chen.</em></li>
-				<li>ACM Multimedia 2015 Track Co-Chair &quot;Mobile Multimedia&quot;</li>
-				<li>ACM CHI 2014 Workshop on "Assistive Augmentation" <em><br />&mdash; with Jun Rekimoto, Masahiko Inami, Roy Shilkrot, Pattie Maes, Meng Ee Wong, Graham Pullin and Suranga Nanayakkara.</em></li>
-				<li>ACM TVX 2014 Media Chair</li>
-				<li>ACM IUI 2014 Third Workshop on "Interacting with Smart Objects" <em><br />&mdash; with  Dirk Schnelle-Walka, Stefan Radomski, Oliver Brdiczka, Kris Luyten and Max M&uuml;hlh&auml;user.</em></li>
-				<li>ACM Multimedia 2013 Track Co-Chair &quot;Mobile &amp; Multi-device&quot;</li>
-				<li>Guest Editorial, Springer Personal and Ubiquitous Computing, Special Issue &quot;Educational Interfaces, Software and Technology&quot;, 2013</li>
-				<li>ACM IUI 2013 Second Workshop on "Interacting with Smart Objects" <em><br />&mdash; with Dirk Schnelle-Walka, Roman Lissermann, Oliver Bdriczka, Kris Luyten and Max M&uuml;hlh&auml;user.</em></li>
-				<li>Guest Editorial, Springer Personal and Ubiquitous Computing, Special Issue &quot;Child-Computer Interaction&quot;, 2012</li>
-				<li>ACM CHI 2012 Workshop on &quot;Educational Interfaces, Software and Technology: UI Technologies and Educational Pedagogy&quot;
-				<br /><em>&mdash; with Edward Tse, Lynn Marentette, Syed I. Ahmed, Alexander Thayer, Max M&uuml;hlh&auml;user, Si Jung Kim and Quincy Brown.</em></li>
-				<li>ACM CHI 2011 Workshop on &quot;Child Computer Interaction: Workshop on UI Technologies and Educational Pedagogy&quot;
-				<br /><em>&mdash; with Edward Tse, Johannes Sch&ouml;ning, Lynn Marentette, Richard Beckwith, Yvonne Rogers and Max M&uuml;hlh&auml;user.</em></li>
-				<li>Mensch &amp; Computer 2011 Workshop on &quot;Be-greifbare Interaktionen in gemischten Wirklichkeiten&quot; (Tangible Interaction)
-				<br /><em>&mdash; with Rolf Kruse, Alexander Kulik and Jens Ziegler.</em></li>
-				<li>Conference on Interdisciplinary Approaches to Technology-enhanced Learning (IATEL) 2009</li>
-			</ul>
-		</div>
+            <li>
+              <strong>Best Paper Award EuroiTV (2012)</strong> <br />A paper I
+              co-authored on
+              <a href="http://doi.acm.org/10.1145/2325616.2325623"
+                >PalmRC: Imaginary Palm-based Remote Control for Eyes-free
+                Television Interaction</a
+              >
+              was recognized with the EuroiTV best paper award 2012.
+            </li>
+            <li>
+              <strong
+                >Full Ph.D. Scholarship, German Research Foundation
+                (2008-2012)</strong
+              >
+              <br />I was awarded a full Ph.D. scholarship funded by the German
+              Research Foundation to pursue a doctoral dissertation within the
+              graduate school on &quot;Technology-enhanced Learning&quot; at
+              Technische Universit&auml;t Darmstadt (DFG Graduiertenkolleg
+              &mdash; GRK 1223).
+            </li>
+          </ul>
+        </div>
 
-				<div class="sixteen columns">
-			<h4>Academic Service</h4>
-			<p>I regularly review papers for major conferences (e.g. CHI, ACM Multimedia, IUI, Augmented Human, MobileHCI, TEI, ITS), journals (e.g. Springer PUC, IEEE Transactions on Multimedia, IEEE Computer), as well as books for the Oxford University Press.</p> 
-			<p>Also, I serve(d) as a program committee member for:</p>
+        <div class="four columns" id="sidebar" style="margin-top: 20px">
+          <img
+            src="images/profile.jpg"
+            alt="About"
+            width="100%"
+            align="center"
+            style="margin-bottom: 5px"
+          />
+          <div class="google-maps-responsive">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2654.8!2d8.8089!3d47.9891!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zWFJNQys3SCBUdXR0bGluZ2Vu!5e0!3m2!1sen!2sde!4v1737695000000!5m2!1sen!2sde"
+              width="100%"
+              height="490"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+          </div>
+        </div>
 
-			<ul class="disc narrow" style="margin-top: -10px">
-				<li>ACM International Conference on Intelligent User Interfaces (IUI) 2020</li>
-				<li>ACM International Conference on Automotive User Interfaces (AutoUI) 2019</li>
-				<li>Augmented Human 2019</li>
-				<li>IEEE International Symposium on Multimedia (ISM) 2019</li>
-				<li>ACM International Conference on Intelligent User Interfaces (IUI) 2019</li>
-				<li>Iternational Workshop on Sensor-based Activity Recognition and Interaction (iWOAR) 2019</li>
-				<li>Augmented Human 2018</li>
-				<li>IEEE International Symposium on Multimedia (ISM) 2018</li>
-				<li>Iternational Workshop on Sensor-based Activity Recognition and Interaction (iWOAR) 2018</li>
-				<li>Augmented Human 2017</li>
-				<li>IEEE International Symposium on Multimedia (ISM) 2017</li>
-				<li>ACM International Conference on Multimedia (MM) 2017</li>
-				<li>Iternational Workshop on Sensor-based Activity Recognition and Interaction (iWOAR) 2017</li>
-				<li>ICCV 2nd Workshop on International Workshop on Egocentric Perception, Interaction and Computing 2017</li>
-				<li>IEEE International Symposium on Multimedia (ISM) 2016</li>
-				<li>ACM International Conference on Multimedia (MM) 2016</li>
-				<li>Augmented Human 2016</li>
-				<li>Iternational Workshop on Sensor-based Activity Recognition and Interaction (iWOAR) 2016</li>
-				<li>IEEE International Symposium on Multimedia (ISM) 2015</li>
-				<li>ACM International Conference on Multimedia (MM) 2015</li>
-				<li>Augmented Human 2015</li>
-				<li>ICME Workshop on International Workshop on Wearable and Ego-vision Systems for Augmented Experience (WEsAX) 2015</li>
-				<li>International Conference on Intelligent User Interfaces (IUI) 2015</li>
-				<li>Iternational Workshop on Sensor-based Activity Recognition and Interaction (iWOAR) 2015</li>
-				<li>British Computer Society Human Computer Interaction Conference (BCS HCI) 2014</li>
-				<li>ACM International Workshop on Socially-Aware Multimedia (SAM) 2014</li> 
-				<li>IEEE International Symposium on Multimedia (ISM) 2014</li>
-				<li>ACM Conference on Human Factors in Computing (CHI) 2014 &mdash; Workshop Track</li>	
-				<li>Augmented Human 2014</li>
-				<li>International Conference on Intelligent User Interfaces (IUI) 2014</li>
-				<li>ACM International Conference on Multimedia (MM) 2013</li>
-				<li>ACM International Workshop on Socially-Aware Multimedia (SAM) 2013</li> 
-				<li>British Computer Society Human Computer Interaction Conference (BCS HCI) 2013</li>
-				<li>International Conference on Intelligent User Interfaces (IUI) 2013 &mdash; Posters and Demos Track</li>
-				<li>British Computer Society Human Computer Interaction Conference (BCS HCI) 2012</li>
-				<li>Workshop on "Be-greifbare Interaktionen" (Tangible Interactions) 2012-2015</li>
-			</ul>
-		</div>
+        <div class="sixteen columns">
+          <h4>Editorials, Chairing and Organization</h4>
 
-		<div class="sixteen columns">
+          <ul class="disc narrow">
+            <li>
+              <a href="http://records.mlab.no">ACM SIGMM Records</a> --
+              co-editor of column on multidisciplinary research in multimedia --
+              since June 2017<em><br />&mdash; with Cynthia C. S. Liem.</em>
+            </li>
+            <li>ACM Creativity &amp; Cognition 2017 Demonstrations Chair</li>
+            <li>
+              ACM International Conference on Interactive Surfaces and Spaces
+              (ISS) 2017 Sponsorship Co-Chair<em
+                ><br />&mdash; with Stacey Scott.</em
+              >
+            </li>
+            <li>
+              ACM TVX 2016 Technical Program Co-chair
+              <em><br />&mdash; with Noor Ali-Hasan.</em>
+            </li>
+            <li>
+              ACM Multimedia 2016 Track Co-chair &quot;Mobile Multimedia&quot;
+            </li>
+            <li>
+              Augmented Human 2015 Technical Program Co-Chair
+              <em><br />&mdash; with Jun Rekimoto and Bing-Yu Chen.</em>
+            </li>
+            <li>
+              ACM Multimedia 2015 Track Co-Chair &quot;Mobile Multimedia&quot;
+            </li>
+            <li>
+              ACM CHI 2014 Workshop on "Assistive Augmentation"
+              <em
+                ><br />&mdash; with Jun Rekimoto, Masahiko Inami, Roy Shilkrot,
+                Pattie Maes, Meng Ee Wong, Graham Pullin and Suranga
+                Nanayakkara.</em
+              >
+            </li>
+            <li>ACM TVX 2014 Media Chair</li>
+            <li>
+              ACM IUI 2014 Third Workshop on "Interacting with Smart Objects"
+              <em
+                ><br />&mdash; with Dirk Schnelle-Walka, Stefan Radomski, Oliver
+                Brdiczka, Kris Luyten and Max M&uuml;hlh&auml;user.</em
+              >
+            </li>
+            <li>
+              ACM Multimedia 2013 Track Co-Chair &quot;Mobile &amp;
+              Multi-device&quot;
+            </li>
+            <li>
+              Guest Editorial, Springer Personal and Ubiquitous Computing,
+              Special Issue &quot;Educational Interfaces, Software and
+              Technology&quot;, 2013
+            </li>
+            <li>
+              ACM IUI 2013 Second Workshop on "Interacting with Smart Objects"
+              <em
+                ><br />&mdash; with Dirk Schnelle-Walka, Roman Lissermann,
+                Oliver Bdriczka, Kris Luyten and Max M&uuml;hlh&auml;user.</em
+              >
+            </li>
+            <li>
+              Guest Editorial, Springer Personal and Ubiquitous Computing,
+              Special Issue &quot;Child-Computer Interaction&quot;, 2012
+            </li>
+            <li>
+              ACM CHI 2012 Workshop on &quot;Educational Interfaces, Software
+              and Technology: UI Technologies and Educational Pedagogy&quot;
+              <br /><em
+                >&mdash; with Edward Tse, Lynn Marentette, Syed I. Ahmed,
+                Alexander Thayer, Max M&uuml;hlh&auml;user, Si Jung Kim and
+                Quincy Brown.</em
+              >
+            </li>
+            <li>
+              ACM CHI 2011 Workshop on &quot;Child Computer Interaction:
+              Workshop on UI Technologies and Educational Pedagogy&quot;
+              <br /><em
+                >&mdash; with Edward Tse, Johannes Sch&ouml;ning, Lynn
+                Marentette, Richard Beckwith, Yvonne Rogers and Max
+                M&uuml;hlh&auml;user.</em
+              >
+            </li>
+            <li>
+              Mensch &amp; Computer 2011 Workshop on &quot;Be-greifbare
+              Interaktionen in gemischten Wirklichkeiten&quot; (Tangible
+              Interaction) <br /><em
+                >&mdash; with Rolf Kruse, Alexander Kulik and Jens Ziegler.</em
+              >
+            </li>
+            <li>
+              Conference on Interdisciplinary Approaches to Technology-enhanced
+              Learning (IATEL) 2009
+            </li>
+          </ul>
+        </div>
 
-			<h4>Press Coverage</h4>
-			
-			<p>My work has been featured internationally in a variety of broadcast, print and online media. Please find selected press coverages below.</p>
+        <div class="sixteen columns">
+          <h4>Academic Service</h4>
+          <p>
+            I regularly review papers for major conferences (e.g. CHI, ACM
+            Multimedia, IUI, Augmented Human, MobileHCI, TEI, ITS), journals
+            (e.g. Springer PUC, IEEE Transactions on Multimedia, IEEE Computer),
+            as well as books for the Oxford University Press.
+          </p>
+          <p>Also, I serve(d) as a program committee member for:</p>
 
-			<h5 style="margin-left: 12px">Broadcast, TV and Video</h5>
-				
-			<ul class="disc narrow">
-				<li><a href="http://www.channelnewsasia.com/tv/tvshows/future-forward/designing-creativity/1467906.html">Designing Creativity</a><br /><strong>Channel News Asia</strong></li>
-				<li><a href="http://www.rtl.de/video/index/showvid/id/335757" target="_blank">Der Ring, der lesen kann [The ring that can read]</a><br />Christina Endruschat, <strong>RTL</strong></li>
-				<li><a href="http://www.razor.tv/video/932701/finger-reader-for-the-blind" target="_blank">Finger reader for the blind</a><br /><strong>SPH Razor TV</strong></li>
-				<li><a href="http://www.msnbc.com/craig-melvin/watch/a-device-that-could-help-the-blind-read-314710083732">A device that could help the blind read</a><br />Craig Melvin, <strong>MSNBC</strong></li>
-				<li><a href="http://www.cnet.com/videos/tomorrow-daily-016-rolling-up-your-tv-reading-with-your-finger-haptic-shirts-tom-merritt/?t=372-522" target="_blank">Tomorrow Daily: Reading with Your Finger</a><br /><strong>c|net</strong></li>
-				<li><a href="http://www.youtube.com/watch?v=Y2AQhaLc5O0" target="_blank">MIT finger device reads to the blind in real time</a><br /><strong>WCVB TV</strong></li>
-				<li><a href="http://fox10tv.com/2014/07/09/new-invention-fingerreader/" target="_blank">New Invention: FingerReader</a><br />Lenise Ligon, <strong>Fox 10 TV</strong></li>
-				<li><a href="http://www.youtube.com/watch?v=eZVOBtOmC4k" target="_blank">'Seeing-Eye' Ring Helps Blind Read With Finger</a><br /><strong>Associated Press</strong></li>
-				<li><a href="http://video.foxbusiness.com/v/3261393774001/wearable-device-helps-you-read-with-your-finger/#sp=show-clips/daytime">Wearable device helps you read with your finger</a><br/> <strong>Fox Business</strong></li>
-			</ul>
+          <ul class="disc narrow" style="margin-top: -10px">
+            <li>
+              ACM International Conference on Intelligent User Interfaces (IUI)
+              2020
+            </li>
+            <li>
+              ACM International Conference on Automotive User Interfaces
+              (AutoUI) 2019
+            </li>
+            <li>Augmented Human 2019</li>
+            <li>IEEE International Symposium on Multimedia (ISM) 2019</li>
+            <li>
+              ACM International Conference on Intelligent User Interfaces (IUI)
+              2019
+            </li>
+            <li>
+              Iternational Workshop on Sensor-based Activity Recognition and
+              Interaction (iWOAR) 2019
+            </li>
+            <li>Augmented Human 2018</li>
+            <li>IEEE International Symposium on Multimedia (ISM) 2018</li>
+            <li>
+              Iternational Workshop on Sensor-based Activity Recognition and
+              Interaction (iWOAR) 2018
+            </li>
+            <li>Augmented Human 2017</li>
+            <li>IEEE International Symposium on Multimedia (ISM) 2017</li>
+            <li>ACM International Conference on Multimedia (MM) 2017</li>
+            <li>
+              Iternational Workshop on Sensor-based Activity Recognition and
+              Interaction (iWOAR) 2017
+            </li>
+            <li>
+              ICCV 2nd Workshop on International Workshop on Egocentric
+              Perception, Interaction and Computing 2017
+            </li>
+            <li>IEEE International Symposium on Multimedia (ISM) 2016</li>
+            <li>ACM International Conference on Multimedia (MM) 2016</li>
+            <li>Augmented Human 2016</li>
+            <li>
+              Iternational Workshop on Sensor-based Activity Recognition and
+              Interaction (iWOAR) 2016
+            </li>
+            <li>IEEE International Symposium on Multimedia (ISM) 2015</li>
+            <li>ACM International Conference on Multimedia (MM) 2015</li>
+            <li>Augmented Human 2015</li>
+            <li>
+              ICME Workshop on International Workshop on Wearable and Ego-vision
+              Systems for Augmented Experience (WEsAX) 2015
+            </li>
+            <li>
+              International Conference on Intelligent User Interfaces (IUI) 2015
+            </li>
+            <li>
+              Iternational Workshop on Sensor-based Activity Recognition and
+              Interaction (iWOAR) 2015
+            </li>
+            <li>
+              British Computer Society Human Computer Interaction Conference
+              (BCS HCI) 2014
+            </li>
+            <li>
+              ACM International Workshop on Socially-Aware Multimedia (SAM) 2014
+            </li>
+            <li>IEEE International Symposium on Multimedia (ISM) 2014</li>
+            <li>
+              ACM Conference on Human Factors in Computing (CHI) 2014 &mdash;
+              Workshop Track
+            </li>
+            <li>Augmented Human 2014</li>
+            <li>
+              International Conference on Intelligent User Interfaces (IUI) 2014
+            </li>
+            <li>ACM International Conference on Multimedia (MM) 2013</li>
+            <li>
+              ACM International Workshop on Socially-Aware Multimedia (SAM) 2013
+            </li>
+            <li>
+              British Computer Society Human Computer Interaction Conference
+              (BCS HCI) 2013
+            </li>
+            <li>
+              International Conference on Intelligent User Interfaces (IUI) 2013
+              &mdash; Posters and Demos Track
+            </li>
+            <li>
+              British Computer Society Human Computer Interaction Conference
+              (BCS HCI) 2012
+            </li>
+            <li>
+              Workshop on "Be-greifbare Interaktionen" (Tangible Interactions)
+              2012-2015
+            </li>
+          </ul>
+        </div>
 
-			<h5 style="margin-left: 12px">Newspapers, Magazines and Blogs</h5>
+        <div class="sixteen columns">
+          <h4>Press Coverage</h4>
 
-			<ul class="disc narrow">
-				<li><a href="https://cloud.asghub.sutd.edu.sg/public.php?service=files&t=fa5ebeba820ac255844914d055a3c91d" target="_blank">Wear this ring to hear what's written</a><br/>Hoe Pei Shan, <strong>Straits Times</strong></li>
-				<li><a href="http://www.businessweek.com/articles/2014-07-29/mit-researchers-have-made-a-ring-that-reads" target="_blank">MIT Researchers Have Made a Ring That Reads</a><br />Danielle Muoio, <strong>Businessweek</strong></li>
-				<li><a href="http://www.forbes.com/sites/federicoguerrini/2014/07/14/mits-fingerreader-could-make-life-easier-for-the-blind/" target="_blank">MIT's FingerReader Could Make Life Easier For The Blind</a><br />Federico Guerrini, <strong>Forbes</strong></li>
-				<li><a href="http://mashable.com/2014/07/13/blind-fingerreader/" target="_blank">FingerReader Is a 3D-Printed Device That Reads Text Aloud to the Blind</a><br />Kari Paul, <strong>Mashable</strong></li>
-				<li><a href="http://www.fastcoexist.com/3032889/this-decoder-ring-helps-the-blind-read-without-braille" target="_blank">This Decoder Ring Helps The Blind Read Without Braille</a><br />Sydney Brownstone, <strong>Fast Company</strong></li>
-				<li><a href="http://www.huffingtonpost.com/2014/07/08/fingerreader-read-blind-mit_n_5565898.html" target="_blank">This Ring Reads Books And Magazines To The Blind</a><br /> <strong>Huffington Post</strong></li>
-				<li><a href="http://www.srf.ch/wissen/technik/finger-reader-hilfe-fuer-sehbehinderte-menschen" target="_blank">Finger-Reader: Hilfe für sehbehinderte Menschen [Finger-Reader: aid for the visually impaired]</a><br />Regula Zehnder, <strong>SRF Schweizer Radio und Fernsehen</strong></li>
-				<li><a href="http://www.heise.de/newsticker/meldung/Ring-als-tragbares-Lesegeraet-fuer-Sehbehinderte-2260612.html" target="_blank">Ring als tragbares Lesegerät für Sehbehinderte [Ring as mobile reading device for the visually impaired]</a><br /><strong>Heise</strong></li>
-				<li><a href="http://www.spektrum.de/news/fingerscanner-liest-in-echtzeit-vor/1299919" target="_blank">Fingerscanner liest in Echtzeit vor [Fingerscanner reads in real-time]</a><br />Daniel Lingenh&ouml;hl, <strong>Spektrum der Wissenschaft</strong></li>
-				<li><a href="http://www.businessinsider.com/mit-fingerreader-ring-for-the-blind-2014-7" target="_blank">A New Type Of Ring Worn On The Finger Eliminates The Need For The Blind To Learn Braille</a><br /> Dylan Love, <strong>Business Insider</strong></li>
-				<li><a href="http://www.iflscience.com/health-and-medicine/new-finger-device-reads-books-blind" target="_blank">New Finger Device Reads Books To The Blind</a><br /> Janet Fang, <strong>IFLScience</strong></li>
-				<li><a href="http://www.wired.co.uk/news/archive/2014-07/08/fingerreader" target="_blank">3D-printed ring reads out text in real-time for the blind</a><br /> Liat Clark, <strong>Wired (UK)</strong></li>
-				<li><a href="http://abcnews.go.com/Technology/wireStory/mit-finger-device-reads-blind-real-time-24461528" target="_blank">MIT Finger Device Reads to the Blind in Real Time</a><br />Rodrique Ngowi, <strong>Associated Press, ABC, CBC and others</strong></li>
-				<li><a href="http://techcrunch.com/2014/04/17/mits-fingerreader-helps-the-blind-read-with-a-swipe-of-a-digit/" target="_blank">MIT’s FingerReader Helps The Blind Read With A Swipe Of A Digit</a><br /> Evan Fleischer, <strong>TechCrunch</strong></li>
-				<li><a href="http://newsfeed.time.com/2014/02/20/mit-scientists-design-ring-to-help-visually-impaired-people-read/" target="_blank">MIT Researchers Design Ring To Help Visually-Impaired People Read</a><br /> Olivia B. Waxman, <strong>TIME</strong></li>
-				<li><a href="http://gizmodo.com/this-ring-scans-text-and-reads-it-aloud-for-visually-im-1525373479" target="_blank">This Ring Scans Text And Reads It Aloud For Visually Impaired People</a><br/> Jordan Kushins, <strong>Gizmodo</strong></li>
-				<li><a href="http://www.ubergizmo.com/2014/04/fingerreader-helps-blind-read/" target="_blank">FingerReader Helps Blind &quot;Read&quot;</a><br />Edwin Kee, <strong>&Uuml;bergizmo</strong></li>
-				<li><a href="http://www.dailymail.co.uk/sciencetech/article-2563759/The-ring-READS-Finger-worn-gadget-reads-aloud-point-words-translate-books.html" target="_blank">The ring that READS for you: Finger-worn gadget reads aloud when you point at words</a><br/>Ellie Zolfagharifard, <strong>The Daily Mail</strong></li>
-				<li><a href="http://news.discovery.com/tech/gear-and-gadgets/finger-computer-reads-books-aloud-140221.htm" target="_blank">Finger Computer Reads Books Aloud</a><br/>Nic Halverson, <strong>Discovery News</strong></li>
-				<li><a href="http://motherboard.vice.com/blog/the-finger-mounted-computer-that-reads-whatever-youre-pointing-at-out-loud" target="_blank">The Finger-Mounted Computer That Reads Aloud When You Point at Words</a><br/>Brian Merchant, <strong>Motherboard</strong></li>
-				<li><a href="http://www.nngroup.com/articles/human-body-touch-input/" target="_blank">The Human Body as Touchscreen Replacement</a><br/> Jakob Nielsen, <strong>Nielsen Norman Group</strong></li>
-				<li><a href="http://newsroom.cisco.com/press-release-content?articleId=1275146" target="_blank">Beyond the Touchscreen: The Human Body as User Interface</a><br/>Laurence Cruz, <strong>The Network by Cisco</strong></li>
-				<li><a href="http://www.engadget.com/2012/02/21/lightbeam-pico-projector-turns-any-surface-into-a-display/" target="_blank">LightBeam pico projector turns any surface into a display, any object into a remote</a><br/>Sharif Sakr, <strong>Engadget</strong></li>
-				<li><a href="http://www.theverge.com/2012/2/21/2814297/lightbeam-pico-projector" target="_blank">LightBeam turns everyday objects into displays, controls</a><br/>Andrew Webster, <strong>The Verge</strong></li>
-				<li><a href="http://www.gizmag.com/lightbeam-pico-projector-interaction/21559/" target="_blank">LightBeam makes any surface a projector display, and everyday objects a remote control</a><br/>Darren Quick, <strong>Gizmag</strong></li>
-				<li><a href="http://www.ubergizmo.com/2012/02/lightbeam-pico-projector/" target="_blank">LightBeam pico projector turns any surface into a display</a><br/>George Wong, <strong>&Uuml;bergizmo</strong></li>
-			</ul>
-		</div>
+          <p>
+            My work has been featured internationally in a variety of broadcast,
+            print and online media. Please find selected press coverages below.
+          </p>
 
-	</div>
-	<!-- About page ends ======================================================================== -->
+          <h5 style="margin-left: 12px">Broadcast, TV and Video</h5>
 
-	
-	<!-- Footer begins ========================================================================== -->
-	<footer class="sixteen columns">
-		<hr />
-		<ul id="footerLinks">
-			<li>&copy; 2022 Jochen Huber. All rights reserved.</li>
-			<li>jochen.huber <i class="fa fa-bullseye"></i> hs-furtwangen.de</li>
-			<li><a href="http://de.linkedin.com/in/jochenhuber" target="_blank"><i class="fa fa-linkedin"></i></a>&nbsp;&nbsp;<a href="https://www.xing.com/profile/Jochen_Huber4" target="_blank"><i class="fa fa-xing"></i></a>&nbsp;&nbsp;<a href="https://twitter.com/JochenHuber" target="_blank"><i class="fa fa-twitter"></i></a></li>
-		</ul>
-	</footer>
-	<!-- Footer ends ============================================================================ -->
-		
-</div><!-- container -->
+          <ul class="disc narrow">
+            <li>
+              <a
+                href="http://www.channelnewsasia.com/tv/tvshows/future-forward/designing-creativity/1467906.html"
+                >Designing Creativity</a
+              ><br /><strong>Channel News Asia</strong>
+            </li>
+            <li>
+              <a
+                href="http://www.rtl.de/video/index/showvid/id/335757"
+                target="_blank"
+                >Der Ring, der lesen kann [The ring that can read]</a
+              ><br />Christina Endruschat, <strong>RTL</strong>
+            </li>
+            <li>
+              <a
+                href="http://www.razor.tv/video/932701/finger-reader-for-the-blind"
+                target="_blank"
+                >Finger reader for the blind</a
+              ><br /><strong>SPH Razor TV</strong>
+            </li>
+            <li>
+              <a
+                href="http://www.msnbc.com/craig-melvin/watch/a-device-that-could-help-the-blind-read-314710083732"
+                >A device that could help the blind read</a
+              ><br />Craig Melvin, <strong>MSNBC</strong>
+            </li>
+            <li>
+              <a
+                href="http://www.cnet.com/videos/tomorrow-daily-016-rolling-up-your-tv-reading-with-your-finger-haptic-shirts-tom-merritt/?t=372-522"
+                target="_blank"
+                >Tomorrow Daily: Reading with Your Finger</a
+              ><br /><strong>c|net</strong>
+            </li>
+            <li>
+              <a
+                href="http://www.youtube.com/watch?v=Y2AQhaLc5O0"
+                target="_blank"
+                >MIT finger device reads to the blind in real time</a
+              ><br /><strong>WCVB TV</strong>
+            </li>
+            <li>
+              <a
+                href="http://fox10tv.com/2014/07/09/new-invention-fingerreader/"
+                target="_blank"
+                >New Invention: FingerReader</a
+              ><br />Lenise Ligon, <strong>Fox 10 TV</strong>
+            </li>
+            <li>
+              <a
+                href="http://www.youtube.com/watch?v=eZVOBtOmC4k"
+                target="_blank"
+                >'Seeing-Eye' Ring Helps Blind Read With Finger</a
+              ><br /><strong>Associated Press</strong>
+            </li>
+            <li>
+              <a
+                href="http://video.foxbusiness.com/v/3261393774001/wearable-device-helps-you-read-with-your-finger/#sp=show-clips/daytime"
+                >Wearable device helps you read with your finger</a
+              ><br />
+              <strong>Fox Business</strong>
+            </li>
+          </ul>
 
-</body>
+          <h5 style="margin-left: 12px">Newspapers, Magazines and Blogs</h5>
+
+          <ul class="disc narrow">
+            <li>
+              <a
+                href="https://cloud.asghub.sutd.edu.sg/public.php?service=files&t=fa5ebeba820ac255844914d055a3c91d"
+                target="_blank"
+                >Wear this ring to hear what's written</a
+              ><br />Hoe Pei Shan, <strong>Straits Times</strong>
+            </li>
+            <li>
+              <a
+                href="http://www.businessweek.com/articles/2014-07-29/mit-researchers-have-made-a-ring-that-reads"
+                target="_blank"
+                >MIT Researchers Have Made a Ring That Reads</a
+              ><br />Danielle Muoio, <strong>Businessweek</strong>
+            </li>
+            <li>
+              <a
+                href="http://www.forbes.com/sites/federicoguerrini/2014/07/14/mits-fingerreader-could-make-life-easier-for-the-blind/"
+                target="_blank"
+                >MIT's FingerReader Could Make Life Easier For The Blind</a
+              ><br />Federico Guerrini, <strong>Forbes</strong>
+            </li>
+            <li>
+              <a
+                href="http://mashable.com/2014/07/13/blind-fingerreader/"
+                target="_blank"
+                >FingerReader Is a 3D-Printed Device That Reads Text Aloud to
+                the Blind</a
+              ><br />Kari Paul, <strong>Mashable</strong>
+            </li>
+            <li>
+              <a
+                href="http://www.fastcoexist.com/3032889/this-decoder-ring-helps-the-blind-read-without-braille"
+                target="_blank"
+                >This Decoder Ring Helps The Blind Read Without Braille</a
+              ><br />Sydney Brownstone, <strong>Fast Company</strong>
+            </li>
+            <li>
+              <a
+                href="http://www.huffingtonpost.com/2014/07/08/fingerreader-read-blind-mit_n_5565898.html"
+                target="_blank"
+                >This Ring Reads Books And Magazines To The Blind</a
+              ><br />
+              <strong>Huffington Post</strong>
+            </li>
+            <li>
+              <a
+                href="http://www.srf.ch/wissen/technik/finger-reader-hilfe-fuer-sehbehinderte-menschen"
+                target="_blank"
+                >Finger-Reader: Hilfe für sehbehinderte Menschen [Finger-Reader:
+                aid for the visually impaired]</a
+              ><br />Regula Zehnder,
+              <strong>SRF Schweizer Radio und Fernsehen</strong>
+            </li>
+            <li>
+              <a
+                href="http://www.heise.de/newsticker/meldung/Ring-als-tragbares-Lesegeraet-fuer-Sehbehinderte-2260612.html"
+                target="_blank"
+                >Ring als tragbares Lesegerät für Sehbehinderte [Ring as mobile
+                reading device for the visually impaired]</a
+              ><br /><strong>Heise</strong>
+            </li>
+            <li>
+              <a
+                href="http://www.spektrum.de/news/fingerscanner-liest-in-echtzeit-vor/1299919"
+                target="_blank"
+                >Fingerscanner liest in Echtzeit vor [Fingerscanner reads in
+                real-time]</a
+              ><br />Daniel Lingenh&ouml;hl,
+              <strong>Spektrum der Wissenschaft</strong>
+            </li>
+            <li>
+              <a
+                href="http://www.businessinsider.com/mit-fingerreader-ring-for-the-blind-2014-7"
+                target="_blank"
+                >A New Type Of Ring Worn On The Finger Eliminates The Need For
+                The Blind To Learn Braille</a
+              ><br />
+              Dylan Love, <strong>Business Insider</strong>
+            </li>
+            <li>
+              <a
+                href="http://www.iflscience.com/health-and-medicine/new-finger-device-reads-books-blind"
+                target="_blank"
+                >New Finger Device Reads Books To The Blind</a
+              ><br />
+              Janet Fang, <strong>IFLScience</strong>
+            </li>
+            <li>
+              <a
+                href="http://www.wired.co.uk/news/archive/2014-07/08/fingerreader"
+                target="_blank"
+                >3D-printed ring reads out text in real-time for the blind</a
+              ><br />
+              Liat Clark, <strong>Wired (UK)</strong>
+            </li>
+            <li>
+              <a
+                href="http://abcnews.go.com/Technology/wireStory/mit-finger-device-reads-blind-real-time-24461528"
+                target="_blank"
+                >MIT Finger Device Reads to the Blind in Real Time</a
+              ><br />Rodrique Ngowi,
+              <strong>Associated Press, ABC, CBC and others</strong>
+            </li>
+            <li>
+              <a
+                href="http://techcrunch.com/2014/04/17/mits-fingerreader-helps-the-blind-read-with-a-swipe-of-a-digit/"
+                target="_blank"
+                >MIT’s FingerReader Helps The Blind Read With A Swipe Of A
+                Digit</a
+              ><br />
+              Evan Fleischer, <strong>TechCrunch</strong>
+            </li>
+            <li>
+              <a
+                href="http://newsfeed.time.com/2014/02/20/mit-scientists-design-ring-to-help-visually-impaired-people-read/"
+                target="_blank"
+                >MIT Researchers Design Ring To Help Visually-Impaired People
+                Read</a
+              ><br />
+              Olivia B. Waxman, <strong>TIME</strong>
+            </li>
+            <li>
+              <a
+                href="http://gizmodo.com/this-ring-scans-text-and-reads-it-aloud-for-visually-im-1525373479"
+                target="_blank"
+                >This Ring Scans Text And Reads It Aloud For Visually Impaired
+                People</a
+              ><br />
+              Jordan Kushins, <strong>Gizmodo</strong>
+            </li>
+            <li>
+              <a
+                href="http://www.ubergizmo.com/2014/04/fingerreader-helps-blind-read/"
+                target="_blank"
+                >FingerReader Helps Blind &quot;Read&quot;</a
+              ><br />Edwin Kee, <strong>&Uuml;bergizmo</strong>
+            </li>
+            <li>
+              <a
+                href="http://www.dailymail.co.uk/sciencetech/article-2563759/The-ring-READS-Finger-worn-gadget-reads-aloud-point-words-translate-books.html"
+                target="_blank"
+                >The ring that READS for you: Finger-worn gadget reads aloud
+                when you point at words</a
+              ><br />Ellie Zolfagharifard, <strong>The Daily Mail</strong>
+            </li>
+            <li>
+              <a
+                href="http://news.discovery.com/tech/gear-and-gadgets/finger-computer-reads-books-aloud-140221.htm"
+                target="_blank"
+                >Finger Computer Reads Books Aloud</a
+              ><br />Nic Halverson, <strong>Discovery News</strong>
+            </li>
+            <li>
+              <a
+                href="http://motherboard.vice.com/blog/the-finger-mounted-computer-that-reads-whatever-youre-pointing-at-out-loud"
+                target="_blank"
+                >The Finger-Mounted Computer That Reads Aloud When You Point at
+                Words</a
+              ><br />Brian Merchant, <strong>Motherboard</strong>
+            </li>
+            <li>
+              <a
+                href="http://www.nngroup.com/articles/human-body-touch-input/"
+                target="_blank"
+                >The Human Body as Touchscreen Replacement</a
+              ><br />
+              Jakob Nielsen, <strong>Nielsen Norman Group</strong>
+            </li>
+            <li>
+              <a
+                href="http://newsroom.cisco.com/press-release-content?articleId=1275146"
+                target="_blank"
+                >Beyond the Touchscreen: The Human Body as User Interface</a
+              ><br />Laurence Cruz, <strong>The Network by Cisco</strong>
+            </li>
+            <li>
+              <a
+                href="http://www.engadget.com/2012/02/21/lightbeam-pico-projector-turns-any-surface-into-a-display/"
+                target="_blank"
+                >LightBeam pico projector turns any surface into a display, any
+                object into a remote</a
+              ><br />Sharif Sakr, <strong>Engadget</strong>
+            </li>
+            <li>
+              <a
+                href="http://www.theverge.com/2012/2/21/2814297/lightbeam-pico-projector"
+                target="_blank"
+                >LightBeam turns everyday objects into displays, controls</a
+              ><br />Andrew Webster, <strong>The Verge</strong>
+            </li>
+            <li>
+              <a
+                href="http://www.gizmag.com/lightbeam-pico-projector-interaction/21559/"
+                target="_blank"
+                >LightBeam makes any surface a projector display, and everyday
+                objects a remote control</a
+              ><br />Darren Quick, <strong>Gizmag</strong>
+            </li>
+            <li>
+              <a
+                href="http://www.ubergizmo.com/2012/02/lightbeam-pico-projector/"
+                target="_blank"
+                >LightBeam pico projector turns any surface into a display</a
+              ><br />George Wong, <strong>&Uuml;bergizmo</strong>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- About page ends ======================================================================== -->
+
+      <!-- Footer begins ========================================================================== -->
+      <footer class="sixteen columns">
+        <hr />
+        <ul id="footerLinks">
+          <li>&copy; 2022 Jochen Huber. All rights reserved.</li>
+          <li>jochen.huber <i class="fa fa-bullseye"></i> hs-furtwangen.de</li>
+          <li>
+            <a href="http://de.linkedin.com/in/jochenhuber" target="_blank"
+              ><i class="fa fa-linkedin"></i></a
+            >&nbsp;&nbsp;<a
+              href="https://www.xing.com/profile/Jochen_Huber4"
+              target="_blank"
+              ><i class="fa fa-xing"></i></a
+            >&nbsp;&nbsp;<a
+              href="https://twitter.com/JochenHuber"
+              target="_blank"
+              ><i class="fa fa-twitter"></i
+            ></a>
+          </li>
+        </ul>
+      </footer>
+      <!-- Footer ends ============================================================================ -->
+    </div>
+    <!-- container -->
+  </body>
 </html>
