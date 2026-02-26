@@ -1,0 +1,147 @@
+- name: "CapMat"
+  url: "http://www.ahlab.org/project/capmat"
+  image: "images/projects/capmat/capmat-orig.jpg"
+  description: "CapMat is a smart foot mat that enables user identification based on a user's capacitive shoe sole image."
+  year_start: 2018
+  year_end: "today"
+
+- name: "Multi-level Force Touchscreen"
+  url: "https://dl.acm.org/citation.cfm?doid=3131726.3132043"
+  image: "images/projects/multi-force/multi-force-orig.jpg"
+  description: "This project investigates multi-level force input on touchscreens for automotive."
+  year_start: 2017
+  year_end: "today"
+
+- name: "Flexibles"
+  url: "https://hci.cs.uni-saarland.de/research/flexibles/"
+  image: "images/projects/flexibles/flexibles-orig.jpg"
+  description: "We introduce 3D-printed tangibles that are deformation-aware and operate on capacitive touchscreens."
+  year_start: 2017
+  year_end: "today"
+
+- name: "Steering Wheel Force Input"
+  url: "https://dl.acm.org/citation.cfm?id=3131740"
+  image: "images/projects/steering-wheel/steering-wheel-orig.jpg"
+  description: "We investigage force-enabled touch input on steering wheels and elicit an interaction language."
+  year_start: 2016
+  year_end: "today"
+
+- name: "Feel &amp; See the Globe"
+  url: "images/projects/feeltheglobe/feeltheglobe-ah15.pdf"
+  image: "images/projects/feeltheglobe/feeltheglobe-orig.jpg"
+  description: "This installation leverages visual and thermal user interactions to convey and educate on global warming."
+  year_start: 2014
+  year_end: 2016
+
+- name: "Mobile 360&deg; Video Interaction"
+  url: "images/projects/360video/360video-ah15.pdf"
+  image: "images/projects/360video/360video-orig.jpg"
+  description: "We investigate 360&deg; video interaction using immersive virtual reality headsets and mid-air gestures."
+  year_start: 2014
+  year_end: 2016
+
+- name: "Body as Display"
+  url: "images/projects/bodyasdisplay/bodyasdisplay-ah15.pdf"
+  image: "images/projects/bodyasdisplay/bodyasdisplay-orig.jpg"
+  description: "This project explores transillumination to turn parts of the human body into displays."
+  year_start: 2014
+  year_end: 2016
+
+- name: "SparKubes"
+  url: "http://asg.sutd.edu.sg/project/sparkubes"
+  image: "images/projects/sparkubes/sparkubes-orig.jpg"
+  description: "SparKubes are stand-alone tangible objects used for play-based learning and rehabilitation."
+  year_start: 2014
+  year_end: 2016
+
+- name: "SpiderVision"
+  url: "http://fluid.media.mit.edu/node/261"
+  image: "images/projects/spidervision/spidervision-orig.jpg"
+  description: "SpiderVision is a head-mounted device that extends the human field of view for augmented awareness."
+  year_start: 2014
+  year_end: 2015
+
+- name: "Permulin"
+  url: "http://www.tk.informatik.tu-darmstadt.de/de/research/tangible-interaction/permulin/"
+  image: "images/projects/permulin/permulin-orig.jpg"
+  description: "Permulin is a novel interactive surface prototype with per-user fullscreen personal in- and output."
+  year_start: 2013
+  year_end: 2015
+
+- name: "EarPut"
+  url: "http://www.tk.informatik.tu-darmstadt.de/de/research/tangible-interaction/earput/"
+  image: "images/projects/earput/earput-orig.jpg"
+  description: "EarPut investigates the unique affordances of the human ear for eyes-free, mobile interaction."
+  year_start: 2013
+  year_end: 2015
+
+- name: "Paint with Your Voice"
+  url: "http://stimmmaler.wordpress.com/"
+  image: "images/projects/paintwithyourvoice/paintwithyourvoice-orig.jpg"
+  description: "This interactive installation allows visitors to paint a picture with their voice&mdash;one scream at a time."
+  year_start: 2013
+  year_end: 2015
+
+- name: "Moving Types"
+  url: "http://www.moving-types.com/en/index.php"
+  image: "images/projects/movingtypes/movingtypes-orig.jpg"
+  description: "This series of exhibitions portrays the history of animated type."
+  year_start: 2011
+  year_end: 2015
+  award_html: '<i class="fa fa-trophy"></i> <em>red<font color="red">dot</font> design award winner 2012</em>'
+
+- name: "PalmRC"
+  url: "http://www.tk.informatik.tu-darmstadt.de/en/research/tangible-interaction/palm-based-remote-control/"
+  image: "images/projects/palmrc/palmrc-orig.jpg"
+  description: "PalmRC leverages the hand as an interactive surface for TV control."
+  year_start: 2012
+  year_end: 2013
+  award_html: '<i class="fa fa-trophy"></i> <em>Best full paper EuroITV 2012</em>'
+
+- name: "CoStream"
+  url: "http://www.tk.informatik.tu-darmstadt.de/de/research/tangible-interaction/costream/"
+  image: "images/projects/costream/costream-orig.jpg"
+  description: "CoStream is a mobile live video sharing system to co-construct shared experiences during events."
+  year_start: 2012
+  year_end: 2013
+
+- name: "LightBeam"
+  url: "http://www.tk.informatik.tu-darmstadt.de/de/research/tangible-interaction/lightbeam/"
+  image: "images/projects/lightbeam/lightbeam-orig.jpg"
+  description: "LightBeam turns everyday objects sojourning in a beam into tangible displays and interaction devices."
+  year_start: 2011
+  year_end: 2012
+
+- name: "Pen-and-Paper Interaction"
+  url: "http://dl.acm.org/authorize?6762549"
+  image: "images/projects/letras/letras-orig.jpg"
+  description: "In exploratory studies, we investigated the potential of mobile pen and paper user interfaces."
+  year_start: 2011
+  year_end: 2012
+
+- name: "Peephole Pointing"
+  url: "http://dl.acm.org/citation.cfm?id=2305316.2305371"
+  image: "images/projects/peephole/peephole-orig.jpg"
+  description: "This line of research models human performance for dynamic peephole pointing with e.g. smartphones."
+  year_start: 2011
+
+- name: "Wipe'n'Watch"
+  url: "http://www.tk.informatik.tu-darmstadt.de/de/research/tangible-interaction/mobile-multimedia-interaction/"
+  image: "images/projects/wipenwatch/wipenwatch-new.jpg"
+  description: "This project explored future interfaces for mobile video browsing, e.g. gestured-based or physical ones."
+  year_start: 2009
+  year_end: 2010
+
+- name: "Spatially-aware Devices"
+  url: "http://dl.mensch-und-computer.de/handle/123456789/1268"
+  image: "images/projects/arproject/arproject-orig.jpg"
+  description: "We explored the use of today's Smartphones as spatially-aware devices for information exploration."
+  year_start: 2008
+  year_end: 2009
+
+- name: "Collaborative Web Browsing"
+  url: "http://link.springer.com/article/10.1007/s11042-011-0980-1"
+  image: "images/projects/wipenwatch/wipenwatch-orig.jpg"
+  description: "We developed novel web page partitioning algorithms and a system for multi-device web browsing."
+  year_start: 2007
+  year_end: 2009

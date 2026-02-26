@@ -1,0 +1,12 @@
+title: "Prof. Dr. Jochen Huber"
+description: "Homepage of Prof. Dr. Jochen Huber"
+url: "https://jochenhuber.de"
+baseurl: ""
+author: "Jochen Huber"
+markdown: kramdown
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - "js/libs/backup-jquery"
+  - "*.md"
+  - "!README.md"

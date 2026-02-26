@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    {% if page.swiper %}
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://fonts.googleapis.com https://fonts.gstatic.com; img-src 'self' data: https:; frame-src https://www.google.com; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com; connect-src https://fonts.googleapis.com https://fonts.gstatic.com;" />
+    {% else %}
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com https://fonts.gstatic.com; img-src 'self' data: https:; frame-src https://www.google.com; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com; connect-src https://fonts.googleapis.com https://fonts.gstatic.com;" />
+    {% endif %}
+
+    <!--
+••••••••••••••••••••••••
+
+Powered by Type & Grids™
+www.typeandgrids.com
+
+••••••••••••••••••••••••
+-->
+
+    <title>Prof. Dr. Jochen Huber</title>
+    <meta name="description" content="{{ page.description | default: site.description }}" />
+    <meta name="author" content="Jochen Huber" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ '/css/base.css' | relative_url }}" />
+    <link rel="stylesheet" href="{{ '/css/themes/type_04.css' | relative_url }}" />
+    <link rel="stylesheet" href="{{ '/css/themes/color_09.css' | relative_url }}" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet" />
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="{{ '/images/favicons/favicon.ico' | relative_url }}" />
+    <link rel="apple-touch-icon" href="{{ '/images/favicons/apple-touch-icon.png' | relative_url }}" />
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ '/images/favicons/apple-touch-icon-72x72.png' | relative_url }}" />
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ '/images/favicons/apple-touch-icon-114x114.png' | relative_url }}" />
+
+    <!-- JS -->
+    <script src="{{ '/js/libs/modernizr.min.js' | relative_url }}"></script>
+    <script src="{{ '/js/script.js' | relative_url }}"></script>
+
+    {% if page.swiper %}
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Custom Swiper Styles -->
+    <style>
+      .swiper { width: 100%; height: auto; border-radius: 4px; }
+      .swiper-slide img { width: 100%; height: auto; display: block; object-fit: cover; }
+      .slider-wrapper.sixteen.columns .swiper { max-width: 100%; }
+    </style>
+    {% endif %}
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header begins -->
+      <header class="sixteen columns">
+        <div id="logo">
+          <h1>Jochen Huber</h1>
+          <h2></h2>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="{{ '/' | relative_url }}"{% if page.url == '/' or page.url == '/index.html' %} class="currentPage"{% endif %}>Home</a></li>
+            <li><a href="{{ '/projects.html' | relative_url }}"{% if page.url contains 'projects' %} class="currentPage"{% endif %}>Projects</a></li>
+            <li><a href="{{ '/publications.html' | relative_url }}"{% if page.url contains 'publications' %} class="currentPage"{% endif %}>Publications</a></li>
+            <li><a href="{{ '/about.html' | relative_url }}"{% if page.url contains 'about' %} class="currentPage"{% endif %}>About</a></li>
+          </ul>
+        </nav>
+        <hr />
+      </header>
+      <!-- Header ends -->
+
+      {{ content }}
+
+      <!-- Footer begins -->
+      <footer class="sixteen columns">
+        <hr />
+        <ul id="footerLinks">
+          <li>&copy; 2026 Jochen Huber. All rights reserved.</li>
+          <li>jochen.huber <i class="fa-solid fa-bullseye"></i> hs-furtwangen.de</li>
+          <li>
+            <a href="http://de.linkedin.com/in/jochenhuber" target="_blank"><i class="fa-brands fa-linkedin"></i></a>&nbsp;&nbsp;<a href="https://www.xing.com/profile/Jochen_Huber4" target="_blank"><i class="fa-brands fa-xing"></i></a>&nbsp;&nbsp;<a href="https://twitter.com/JochenHuber" target="_blank"><i class="fa-brands fa-twitter"></i></a>&nbsp;&nbsp;<a href="https://bsky.app/profile/jochenhuber.bsky.social" target="_blank"><i class="fa-brands fa-bluesky"></i></a>
+          </li>
+        </ul>
+      </footer>
+      <!-- Footer ends -->
+    </div><!-- container -->
+
+    {% if page.swiper %}
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        if (typeof Swiper !== "undefined") {
+          const swiper = new Swiper(".swiper", {
+            effect: "fade",
+            fadeEffect: { crossFade: true },
+            speed: 1500,
+            autoplay: {
+              delay: 7500,
+              disableOnInteraction: false,
+              pauseOnMouseEnter: false,
+            },
+            loop: true,
+            navigation: false,
+            pagination: false,
+            a11y: {
+              enabled: true,
+              prevSlideMessage: "Previous slide",
+              nextSlideMessage: "Next slide",
+            },
+            autoHeight: false,
+            initialSlide: Math.floor(Math.random() * {{ site.data.slides | size | default: 9 }}),
+          });
+        } else {
+          console.warn("Swiper library not loaded. Check CSP settings and network connection.");
+        }
+      });
+    </script>
+    {% endif %}
+  </body>
+</html>

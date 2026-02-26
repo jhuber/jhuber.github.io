@@ -82,37 +82,6 @@ const $ = {
   },
 };
 
-// jQuery easing removed - using CSS transitions
-let currentPage = "home"; // 'home', 'work', 'about', 'pub'
-
-function fadeOut() {
-  if (currentPage === "home") {
-    const homeEl = $.get("#home");
-    const homePageEl = $.get("#homePage");
-    if (homeEl) $.fadeOut(homeEl, 0);
-    if (homePageEl) homePageEl.classList.remove("currentPage");
-    currentPage = "";
-  } else if (currentPage === "work") {
-    const workEl = $.get("#work");
-    const workPageEl = $.get("#workPage");
-    if (workEl) $.fadeOut(workEl, 0);
-    if (workPageEl) workPageEl.classList.remove("currentPage");
-    currentPage = "";
-  } else if (currentPage === "about") {
-    const aboutEl = $.get("#about");
-    const aboutPageEl = $.get("#aboutPage");
-    if (aboutEl) $.fadeOut(aboutEl, 0);
-    if (aboutPageEl) aboutPageEl.classList.remove("currentPage");
-    currentPage = "";
-  } else if (currentPage === "pub") {
-    const pubEl = $.get("#pub");
-    const pubPageEl = $.get("#pubPage");
-    if (pubEl) $.fadeOut(pubEl, 0);
-    if (pubPageEl) pubPageEl.classList.remove("currentPage");
-    currentPage = "";
-  }
-}
-
 $.ready(function () {
   // Make enlarge buttons inactive if no onClick event
   const enlargeButtons = $.getAll(".enlargeButton");
@@ -204,75 +173,6 @@ $.ready(function () {
       el.style.visibility = "hidden";
     });
   }
-
-  // Page navigation
-
-  $.onClick("#logoDetailView", function () {
-    window.location = "../../index.html";
-  });
-
-  $.onClick("#workPage", function () {
-    if (currentPage !== "work") {
-      fadeOut();
-      const workEl = $.get("#work");
-      const workPageEl = $.get("#workPage");
-      if (workEl) $.fadeIn(workEl, 500);
-      currentPage = "work";
-      if (workPageEl) workPageEl.className = "currentPage";
-    }
-  });
-
-  $.onClick("#aboutPage", function () {
-    if (currentPage !== "about") {
-      fadeOut();
-      const aboutEl = $.get("#about");
-      const aboutPageEl = $.get("#aboutPage");
-      if (aboutEl) $.fadeIn(aboutEl, 500);
-      currentPage = "about";
-      if (aboutPageEl) aboutPageEl.className = "currentPage";
-    }
-  });
-
-  $.onClick("#pubPage", function () {
-    if (currentPage !== "pub") {
-      fadeOut();
-      const pubEl = $.get("#pub");
-      const pubPageEl = $.get("#pubPage");
-      if (pubEl) $.fadeIn(pubEl, 500);
-      currentPage = "pub";
-      if (pubPageEl) pubPageEl.className = "currentPage";
-    }
-  });
-
-  // Handle both home page and logo clicks
-  const homeElements = [$.get("#homePage"), $.get("#logo")];
-  homeElements.forEach((element) => {
-    if (element) {
-      element.addEventListener("click", function () {
-        if (currentPage !== "home") {
-          fadeOut();
-          const homeEl = $.get("#home");
-          const homePageEl = $.get("#homePage");
-          if (homeEl) $.fadeIn(homeEl, 500);
-          currentPage = "home";
-          if (homePageEl) homePageEl.className = "currentPage";
-        }
-      });
-    }
-  });
-
-  // Make home page current page
-  const homePageEl = $.get("#homePage");
-  if (homePageEl) homePageEl.className = "currentPage";
-
-  // Hide other pages initially
-  const aboutEl = $.get("#about");
-  const workEl = $.get("#work");
-  const pubEl = $.get("#pub");
-
-  if (aboutEl) $.fadeOut(aboutEl, 0);
-  if (workEl) $.fadeOut(workEl, 0);
-  if (pubEl) $.fadeOut(pubEl, 0);
 
   // For site fade site in
   const containerEl = $.get(".container");

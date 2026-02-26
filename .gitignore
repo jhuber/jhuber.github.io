@@ -81,3 +81,12 @@ papers/.DS_Store
 ANALYSIS_SUMMARY.md
 .gitignore
 .gitignore
+
+# Jekyll build output
+_site/
+.jekyll-cache/
+.jekyll-metadata
+Gemfile.lock
+
+# Local testing guide (already covered by *.md, but explicit for clarity)
+test_locally.md
