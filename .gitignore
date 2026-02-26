@@ -6,6 +6,10 @@
 
 serve.sh
 
+.playwright-mcp/
+
+home-full.png
+
 images/backgrounds/crossword.png
 
 images/backgrounds/square_bg.png
