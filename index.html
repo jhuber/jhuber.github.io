@@ -50,7 +50,7 @@ swiper: true
         </div>
         {% for pub in site.data.recent_publications %}
         <div class="one column">
-          <img src="{{ pub.cover }}" alt="{{ pub.title }}" loading="lazy" border="0" height="70px" />
+          <img src="{{ pub.cover }}" alt="{{ pub.title | strip_html }}" loading="lazy" border="0" height="70px" />
         </div>
         <div class="seven columns">
           <p>
