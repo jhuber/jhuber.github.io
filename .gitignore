@@ -4,6 +4,8 @@
 *.md
 !README.md
 
+serve.sh
+
 images/backgrounds/crossword.png
 
 images/backgrounds/square_bg.png
