@@ -5,6 +5,7 @@ swiper: true
 ---
       <!-- Home page begins -->
       <div id="home">
+        <h1 style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">Home — Prof. Dr. Jochen Huber</h1>
         <div class="slider-wrapper sixteen columns" style="margin-bottom: 30px">
           <div class="swiper">
             <div class="swiper-wrapper">
@@ -49,7 +50,7 @@ swiper: true
         </div>
         {% for pub in site.data.recent_publications %}
         <div class="one column">
-          <img src="{{ pub.cover }}" border="0" height="70px" />
+          <img src="{{ pub.cover }}" alt="{{ pub.title }}" loading="lazy" border="0" height="70px" />
         </div>
         <div class="seven columns">
           <p>
