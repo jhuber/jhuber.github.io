@@ -2,7 +2,6 @@
 ••••••••••••••••••••••••
 
 Powered by Type & Grids™
-www.typeandgrids.com
 
 ••••••••••••••••••••••••
 */
@@ -778,6 +777,32 @@ legend span {
 }
 .container .offset-by-fifteen {
   padding-left: 900px;
+}
+
+/* ---- Intro + News row (home page) ---- */
+#intro-news-row {
+  position: relative;
+  float: left;
+  width: 960px;
+  margin: 0;
+  overflow: hidden;   /* BFC: contains floated intro; clips news */
+}
+
+#news-col {
+  position: absolute;
+  top: 0;
+  right: 10px;        /* match Skeleton right margin */
+  width: 460px;       /* match .eight.columns */
+  height: 90%;       /* fill wrapper = intro height */
+  overflow: hidden;   /* clip items that exceed intro height */
+  margin: 0;
+  box-sizing: border-box;       /* padding included in height:100% */
+  padding-bottom: 14px;         /* breathing room above bottom edge */
+  border-bottom: 3px solid #ddd; /* always-visible closing line */
+}
+
+#news-col .linedList {
+  border-bottom: none; /* border lives on #news-col; suppress duplicate */
 }
 
 /*===================================================================================================
