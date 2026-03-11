@@ -92,7 +92,6 @@ ANALYSIS_SUMMARY.md
 _site/
 .jekyll-cache/
 .jekyll-metadata
-Gemfile.lock
 
 # Local testing guide (already covered by *.md, but explicit for clarity)
 test_locally.md
