@@ -802,7 +802,7 @@ legend span {
   margin: 0;
   box-sizing: border-box;       /* padding included in height:100% */
   padding-bottom: 14px;         /* breathing room above bottom edge */
-  border-bottom: 3px solid #ddd; /* always-visible closing line */
+  /*border-bottom: 3px solid #ddd; /* always-visible closing line */
 }
 
 #news-col .linedList {
