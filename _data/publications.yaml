@@ -81,6 +81,12 @@
 # Conference Papers
 - id: C47
   section: conferences
+  authors: "Mia Huong Nguyen, Moritz A. Messerschmidt, <strong>Jochen Huber</strong> and Suranga Nanayakkara"
+  title: "VisceroHaptics: Investigating the Effects of Gut-based Audio-Haptic Feedback on Gastric Feelings and Gastric Interoceptive Behavior"
+  venue: "In CHI '26: Proceedings of the 44th International Conference on Human Factors in Computing Systems, ACM, to appear, 2026. <i class=\"fa-solid fa-trophy\"></i> Honorable Mention Award."
+
+- id: C47
+  section: conferences
   authors: "Don Samitha Elvitigala, <strong>Jochen Huber</strong> and Suranga Nanayakkara"
   title: "Augmented Foot: A Comprehensive Survey of Foot Augmentation Devices"
   venue: "In Augmented Humans Conference 2021 (AHs2021), to appear."
