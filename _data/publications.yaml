@@ -79,6 +79,12 @@
   venue: "In Interdisciplinary Approaches to Technology-Enhanced Learning, Waxmann Verlag, M&uuml;nster, Germany, 2011."
 
 # Conference Papers
+- id: C49
+  section: conferences
+  authors: "Muftee Mysan, Soundarya Ramesh, Peter Cleveland, Ryo Hajika, Mia Huong Nguyen, <strong>Jochen Huber</strong>, Marianna Obrist and Suranga Nanayakkara"
+  title: "OpenGut: An Open-Source Platform for Gut-Computer Interaction Research"
+  venue: "In UIST '26: Proceedings of the 39th Annual ACM Symposium on User Interface Software and Technology, ACM, to appear, 2026."
+
 - id: C48
   section: conferences
   authors: "Mia Huong Nguyen, Moritz A. Messerschmidt, <strong>Jochen Huber</strong> and Suranga Nanayakkara"
